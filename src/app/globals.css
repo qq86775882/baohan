@@ -1,0 +1,168 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+/* 中国保函网样式 */
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%
+}
+
+body {
+  margin: 0;
+  padding: 0
+}
+
+ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,hgroup,p,blockquote,figure,form,fieldset,input,legend,pre,abbr,button {
+  margin: 0;
+  padding: 0
+}
+
+ul{ list-style: none;}
+
+pre,code,address,caption,th,figcaption {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal
+}
+
+fieldset,iframe,img {
+  border: 0
+}
+
+caption,th {
+  text-align: left
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+article,aside,footer,header,nav,main,section,summary,details,hgroup,figure,figcaption {
+  display: block
+}
+
+audio,canvas,video,progress {
+  display: inline-block;
+  vertical-align: baseline
+}
+
+button {
+  background: none;
+  border: 0;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  color: inherit;
+  cursor: pointer;
+  font: inherit;
+  line-height: inherit;
+  overflow: visible;
+  vertical-align: inherit
+}
+
+input,textarea,select,input:focus,button,button:focus {
+  outline: none;
+}
+
+button:disabled {
+  cursor: default
+}
+
+:focus {
+  outline: 3px solid #c1e0fe;
+  outline: 3px solid rgba(131,192,253,0.5);
+  outline-offset: 1px
+}
+
+:focus[data-focus-method="mouse"]:not(input):not(textarea):not(select),:focus[data-focus-method="touch"]:not(input):not(textarea):not(select) {
+  outline: none
+}
+
+::-moz-focus-inner {
+  border: 0;
+  padding: 0
+}
+
+/* 中国保函网颜色类 */
+.blue{ color:#0666e1 ;}
+.orange{ color: #fc8800 ;}
+
+.head{ height: 60px; background: #2c2e31;}
+.head .centre{ width: 1100px; margin: 0 auto;}
+
+.content{ width: 800px; margin: 0 auto; padding-top: 80px;}
+.content .home-top{ padding: 0 100px; width: 600px;}
+.system-title{ height: 150px; position: relative; padding-left: 200px;}
+.magnifier-icon{ position: absolute; top: 0; left: 0;}
+.system-title .title{ padding-top: 10px; line-height: 60px; font-weight: bold; color: #0863d8; font-size: 40px;}
+.system-title .explain{ color: #fc8800; font-size: 16px;}
+.form-box .level-item{ position: relative; margin-top: 30px; min-height: 40px; padding-left: 100px;}
+.form-box .level-item .key{ position: absolute; width: 100px; left: 0; top: 0; line-height: 40px; color: #666666;}
+.form-box .input-text input{ padding: 0 10px; box-sizing: border-box; width: 100%; height: 40px; line-height: 40px; background: #f7f7f7; border: 1px solid #eeeeee; border-radius:6px;}
+.form-box  .submit-box{ text-align: center;}
+.form-box  .submit{ margin: 0 auto; width: 200px; height: 40px; border-radius: 6px; background: #0666e1; color: #ffffff;}
+.form-box  .submit:hover, .detail .continue:hover{ background: #0250b5;}
+.tip{ font-size: 14px; padding-top: 10px; color: #999;}
+.query-method{ padding-top: 40px; padding-bottom: 100px;}
+.query-method .take-care{ line-height: 22px; color: #666;}
+.query-method .take-care .title{ font-weight: bold; color: #333;}
+.query-method .take-care p{ padding: 5px 0; text-indent: -10em; padding-left: 10em;}
+.method-box{ padding:20px 30px 30px; background: #f5f9fd; border: 1px solid #e9eff7;border-radius: 6px;}
+.method-box .hd{ height: 40px; line-height: 40px; font-size: 16px; font-weight: bold; color: #333;}
+.method-box li{ line-height: 30px; color: #666;}
+.detail{ width: 1100px; margin: 0 auto; padding-bottom:200px}
+.detail .code-list{ padding-bottom: 20px; padding-top: 45px; line-height: 40px; border-bottom: 1px solid #DCDCDC;}
+.detail .code-list ul::after{ content:'';display: table; clear: both;}
+.detail .code-list li{ float: left; padding-right: 30px;}
+.detail .continue{float: right; width: 120px; height: 40px; border-radius: 6px; background: #0666e1; color: #ffffff;}
+.detail .jsondata{padding:0 40px;}
+.detail .jsondata li{ position: relative; padding: 10px 0 10px 160px; line-height: 30px; min-height: 30px;}
+.detail .jsondata li .key{ position: absolute; left: 0; top: 0; padding: 10px 0; display: inline-block; width: 150px; text-align: right; color: #999;}
+.detail .jsondata li .val{min-height: 30px;}
+.detail  .remark{padding: 40px;}
+.content-title{ padding-top: 40px; padding-bottom: 20px; padding-left: 140px; line-height: 30px; background: url('/images/small-ok.png') 70px 30px no-repeat; font-size: 30px; font-weight: bold;}
+.contetn-body{ min-height: 400px; padding-right: 400px; background: url('/images/big-ok.png') right 0 no-repeat;}
+.foot{ position: fixed; right: 0; bottom: 0; left: 0; height: 45px; line-height: 45px; background: #ffffff;border-top: 1px solid #ddd; text-align: center; box-shadow: 0 0 4px 1px #dcdcdc;}
+
+/* 适配不同屏幕尺寸 */
+@media (max-width: 1200px) {
+  .content{ width: 90%; max-width: 800px; }
+  .content .home-top{ padding: 0 20px; width: auto; }
+  .system-title{ padding-left: 120px; height: auto; }
+  .detail{ width: 90%; max-width: 1100px; }
+}
+
+@media (max-width: 768px) {
+  .head .centre{ width: auto; padding: 0 20px; }
+  .form-box .level-item{ padding-left: 80px; }
+  .form-box .level-item .key{ width: 80px; }
+  .detail .jsondata li{ padding: 10px 0 10px 120px; }
+  .detail .jsondata li .key{ width: 110px; }
+  .content-title{ padding-left: 20px; background-position: 20px 30px; }
+  .contetn-body{ padding-right: 50px; }
+  .foot{ position: relative; }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}

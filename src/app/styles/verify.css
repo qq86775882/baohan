@@ -1,0 +1,229 @@
+/* 查询结果页面样式 */
+.verify-result-container {
+  min-height: 100vh;
+  background-color: #f8fafc;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.verify-result-header {
+  background-color: #1e293b;
+  height: 4rem;
+}
+
+.verify-result-header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.verify-result-logo {
+  height: 4rem;
+  width: auto;
+}
+
+.verify-result-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 1rem 8rem;
+}
+
+.verify-result-title-section {
+  position: relative;
+  padding-left: 12rem;
+  margin-bottom: 3rem;
+}
+
+.verify-result-magnifier-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10rem;
+  height: 10rem;
+}
+
+.verify-result-title {
+  padding-top: 0.625rem;
+  font-size: 3.125rem;
+  font-weight: 700;
+  color: #1e40af;
+  margin-bottom: 0.5rem;
+}
+
+.verify-result-explain {
+  color: #ea580c;
+  font-size: 1.125rem;
+}
+
+.verify-result-code-list {
+  padding-bottom: 1.25rem;
+  padding-top: 2.8125rem;
+  border-bottom: 1px solid #d1d5db;
+  position: relative;
+}
+
+.verify-result-continue-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 7.5rem;
+  height: 2.5rem;
+  border-radius: 0.375rem;
+  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verify-result-continue-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(59, 130, 246, 0.3);
+}
+
+.verify-result-code-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.verify-result-code-list li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.verify-result-content-title {
+  padding-top: 2.5rem;
+  padding-bottom: 1.25rem;
+  padding-left: 8.75rem;
+  font-size: 1.875rem;
+  font-weight: 700;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="20 6 9 17 4 12"%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: 4.375rem 1.875rem;
+}
+
+.verify-result-content-body {
+  min-height: 25rem;
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 24 24" fill="none" stroke="green" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"%3E%3Cpolyline points="20 6 9 17 4 12"%3E%3C/polyline%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 100px 100px;
+  padding-right: 25rem;
+}
+
+.verify-result-jsondata {
+  padding: 0;
+}
+
+.verify-result-jsondata ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.verify-result-jsondata li {
+  position: relative;
+  padding: 0.625rem 0 0.625rem 10rem;
+  min-height: 1.875rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.verify-result-jsondata li:last-child {
+  border-bottom: none;
+}
+
+.verify-result-jsondata-key {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 0.625rem 0;
+  display: inline-block;
+  width: 9.375rem;
+  text-align: right;
+  color: #6b7280;
+  font-weight: 600;
+}
+
+.verify-result-jsondata-val {
+  min-height: 1.875rem;
+  color: #374151;
+}
+
+.verify-result-footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 2.8125rem;
+  line-height: 2.8125rem;
+  background: white;
+  border-top: 1px solid #d1d5db;
+  text-align: center;
+  box-shadow: 0 0 4px 1px #dcdcdc;
+  z-index: 1000;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .verify-result-content {
+    padding: 2rem 1rem 4rem;
+  }
+  
+  .verify-result-title-section {
+    padding-left: 3rem;
+  }
+  
+  .verify-result-magnifier-icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  
+  .verify-result-title {
+    font-size: 1.5rem;
+  }
+  
+  .verify-result-explain {
+    font-size: 0.875rem;
+  }
+  
+  .verify-result-content-title {
+    padding-left: 1rem;
+    background-position: left 0.5rem top 1.875rem;
+  }
+  
+  .verify-result-jsondata li {
+    padding: 0.625rem 0;
+    min-height: auto;
+  }
+  
+  .verify-result-jsondata-key {
+    position: static;
+    text-align: left;
+    display: block;
+    width: auto;
+    padding: 0;
+    font-weight: 600;
+  }
+  
+  .verify-result-jsondata-val {
+    margin-top: 0.25rem;
+  }
+  
+  .verify-result-content-body {
+    padding-right: 1rem;
+    background-position: right 1rem center;
+  }
+  
+  .verify-result-continue-btn {
+    position: static;
+    width: 100%;
+    margin-top: 1rem;
+  }
+}
