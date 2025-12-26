@@ -1,5 +1,5 @@
 [build]
-  # publish = "out" # if using next export
+ 
   command = "npm run build"
 
 [[plugins]]
