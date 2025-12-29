@@ -263,14 +263,14 @@ export default function GuaranteeFormModal({ isOpen, onClose, onSubmit, loading 
             </div>
 
             <div className="flex justify-end space-x-6 pt-6 border-t border-gray-200 pt-8">
-              <button
+              <button style={{ marginRight: '8px' }}
                 type="button"
                 onClick={handleClose}
                 className="admin-list-action-button admin-list-delete-button"
               >
                 取消
               </button>
-              <button style={{ 'margin-right': '1rem' }}
+              <button 
                 type="submit"
                 disabled={loading}
                 className="admin-list-action-button admin-list-edit-button flex items-center"
@@ -291,4 +291,5 @@ export default function GuaranteeFormModal({ isOpen, onClose, onSubmit, loading 
       </div>
     </div>
   );
+
 }
