@@ -116,7 +116,7 @@ export default function VerifyResultPage() {
                   </div>
                   
                   <div className="flex flex-col border-b border-gray-100 pb-2">
-                    <span className="text-sm text-gray-600">担保金额(万元)</span>
+                    <span className="text-sm text-gray-600">担保金额</span>
                     <span className="text-base text-gray-800">{result?.guarantee_amount}</span>
                   </div>
                   

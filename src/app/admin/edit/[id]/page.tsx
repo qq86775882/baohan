@@ -211,7 +211,7 @@ export default function EditGuaranteePage() {
 
               <div>
                 <label htmlFor="guarantee_amount" className="block text-sm font-medium text-gray-700 mb-1">
-                  担保金额(万元) *
+                  担保金额 *
                 </label>
                 <input
                   type="number"

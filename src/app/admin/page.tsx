@@ -224,7 +224,7 @@ export default function AdminPage() {
               {/* 担保金额 */}
               <div>
                 <label htmlFor="guarantee_amount" className="admin-login-label">
-                  担保金额(万元) *
+                  担保金额 *
                 </label>
                 <input
                   type="number"

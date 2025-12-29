@@ -203,7 +203,7 @@ export default function GuaranteeListPage() {
                   <th className="admin-list-th">受益人</th>
                   <th className="admin-list-th">申请单位</th>
                   <th className="admin-list-th">工程名称</th>
-                  <th className="admin-list-th">担保金额(万元)</th>
+                  <th className="admin-list-th">担保金额</th>
                   <th className="admin-list-th">担保期限</th> {/* 改为担保期限 */}
                   <th className="admin-list-th">担保人</th>
                   <th className="admin-list-th">操作</th>
