@@ -41,8 +41,9 @@ export default function AdminLayout({
   }, [router, pathname]);
 
   const handleLogout = () => {
-    // 清除认证令牌
+    // 清除认证令牌 - 同时清除 localStorage 和 cookie
     localStorage.removeItem('auth-token');
+    document.cookie = 'auth-token=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT;'; // 清除cookie
     // 重定向到登录页面
     router.push('/admin/login');
   };

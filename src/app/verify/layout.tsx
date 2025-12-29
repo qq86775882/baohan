@@ -7,7 +7,7 @@ export default function VerifyLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body>
+      <body className="min-h-screen bg-gray-50">
         {children}
       </body>
     </html>

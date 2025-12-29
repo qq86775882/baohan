@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server';
 export function middleware(request: NextRequest) {
   // 定义需要认证的路径
   const protectedPaths = [
-    /^\/admin\/.*$/,
+    /^\/admin\/(?!login$).*$/,  // 匹配 /admin/ 下的所有路径，但排除 /admin/login
     /^\/api\/admin\/.*$/,
     /^\/api\/guarantees\/.*$/,
     /^\/api\/auth\/.*$/

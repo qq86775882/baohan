@@ -37,6 +37,10 @@ export default function LoginPage() {
       if (response.ok) {
         // 登录成功，保存token到localStorage
         localStorage.setItem('auth-token', data.token);
+        
+        // 同时设置cookie以便中间件可以验证
+        document.cookie = `auth-token=${data.token}; path=/; max-age=86400; SameSite=Lax; Secure=false`; // 24小时过期
+        
         // 重定向到管理页面
         router.push('/admin/list');
       } else {
